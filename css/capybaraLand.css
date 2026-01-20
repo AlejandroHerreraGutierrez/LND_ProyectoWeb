@@ -1,0 +1,92 @@
+:root {
+  /* Color primario */
+  --rojo: #cc2d18;
+  /* Color secundario */
+  --marron: #9b4320;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 50px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 20%;
+    font-size: 1.5rem;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--marron);
+    text-shadow: 4px 4px 1px #000000;
+    
+}
+
+
+li {
+    display: inline-block;    
+   
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1px) brightness(80%);
+    z-index: -1;
+}
+
+/* #portada {
+    position: relative;
+} */
+
+#portada > h1, h2 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-shadow: 10px 10px 4px #000000;
+    overflow: hidden;
+    z-index: 5;
+}
+
+#portada > h2 {
+    top: 55%
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #9b4320;
+}
+
+footer img {
+    height: 150px;
+}
