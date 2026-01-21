@@ -31,6 +31,10 @@ nav {
     
 }
 
+#portada {
+    position: relative;
+}
+
 
 li {
     display: inline-block;    
@@ -40,8 +44,6 @@ li {
 ul {
     display: flex;
     justify-content: space-around;
-   
-
 }
 
 a {
@@ -60,9 +62,7 @@ video {
     z-index: -1;
 }
 
-/* #portada {
-    position: relative;
-} */
+
 
 #portada > h1, h2 {
     color: white;
@@ -89,4 +89,13 @@ footer {
 
 footer img {
     height: 150px;
+}
+
+@media screen and (max-width: 3000px) {
+    
+    header {
+        font-size: 1.2rem;
+    }
+
+    
 }
