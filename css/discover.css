@@ -19,8 +19,11 @@ video {
 
 
 #portada > h1, h2 {
+    display: inline-block;
+    text-align: center;
     color: white;
     position: absolute;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -29,7 +32,7 @@ video {
     z-index: 5;
 }
 
-#portada > h2 {
+#portada > h2 {   
     top: 55%
 }
 
@@ -78,12 +81,36 @@ p {
     }   
 }
 
+@media screen and (max-width: 1000px) {
+    #portada h1, h2 {
+        font-size: 2.2rem;
+    }
+
+    #portada h2 {
+        top: 55%;
+    }
+
+    img {
+        height: 20vh;
+    }
+
+    p {font-size: 1rem;}
+}
+
 @media screen and (max-width: 500px) {
     #portada > h1, h2 {
-        position: fixed;
-        font-size: 1rem;
+        position: absolute;
+        font-size: 1.2rem;
+    }
+
+    p {font-size: 0.65rem;}
+
+    #line {
+        height: 150px;
     }
 }
+
+
 
 
 

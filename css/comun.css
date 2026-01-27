@@ -15,22 +15,18 @@ html {
 
 body {margin: 0;}
 
-header {
+nav {
     position: sticky;
     top: 0;
     z-index: 10;
     height: 20%;
     font-size: 1.5rem;
-    
-}
-
-nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: var(--marron);
     text-shadow: 3px 3px 1px #000000;
-}
+}    
 
 
 #portada {position: relative;}
@@ -56,12 +52,13 @@ a {
 footer {
     display: flex;
     justify-content: space-evenly;
+    font-size: 1.3rem;
     color: white;
     background-color: #9b4320;
 }
 
 footer img {
-    height: 40px;
+    height: 50px;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -71,6 +68,12 @@ footer div {
     justify-content: center;
     align-items: center;
     width: 33.3%;
+}
+
+footer p, small {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -83,13 +86,19 @@ footer div {
 
     li:hover {
     font-size: 1.3rem;
-}
+    }
 
-    footer {
+    footer div {
+        text-align: center;
+    }
+
+    footer p, small {
+        
+        width: 100%;
         font-size: 0.8rem;
     }
 
     footer img {
-        height: 30px;
+        height: 40px;
     }
 }
