@@ -18,7 +18,7 @@ video {
 
 
 
-#portada > h1, h2 {
+#portada > h1, #portada > h2 {
     display: inline-block;
     text-align: center;
     color: white;
@@ -75,8 +75,18 @@ p {
     margin-inline: 15px;
 }
 
+#gallery div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 #gallery img {
     height: 20vh;
+}
+
+#gallery h2 {
+    text-align: center;
 }
 
 figure {
