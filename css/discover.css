@@ -36,19 +36,25 @@ video {
     top: 55%
 }
 
-img {
+#entrance img {
     height: 35vh;
     border-radius: 50px;
     border: #9b4320 solid 3px;
 }
 
 #entrance {
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 30px;
+    
+}
+
+.aparecer {
+    opacity: 1;
     animation: fadeInRight 1s ease-out forwards;
-    animation-timeline: auto();
 }
 
 #entrance div {
@@ -69,6 +75,18 @@ p {
     margin-inline: 15px;
 }
 
+#gallery img {
+    height: 20vh;
+}
+
+figure {
+    display: inline-block;
+    border: #9b4320 solid 3px;
+    overflow: hidden;
+    border-radius: 30px;
+    text-align: center;
+}
+
 @keyframes fadeInRight {
 
     from {
@@ -87,12 +105,14 @@ p {
     }
 
     #portada h2 {
-        top: 55%;
+        top: 57%;
     }
 
     img {
         height: 20vh;
     }
+
+    #line {height: 200px;}
 
     p {font-size: 1rem;}
 }
@@ -105,9 +125,7 @@ p {
 
     p {font-size: 0.65rem;}
 
-    #line {
-        height: 150px;
-    }
+    #line {height: 150px;}
 }
 
 
