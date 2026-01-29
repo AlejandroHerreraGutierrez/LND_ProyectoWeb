@@ -81,7 +81,7 @@ p {
     justify-content: space-evenly;
 }
 
-#gallery img {height: 20vh;}
+#gallery img {width: 14vw; height: 22vh;}
 
 #gallery h2 {text-align: center;}
 
@@ -97,11 +97,12 @@ figure {
 figure p {
     position: absolute;
     width: 100%;
-    top: -20%;
+    top: -40%;
     opacity: 1;
+    text-shadow: 2px 2px var(--marron);
 }
 
-figure:hover {
+figure:hover img, figure:hover figcaption {
     filter: blur(1px) brightness(50%);
     transition: ease 0.4s;
 }
