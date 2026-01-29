@@ -1,4 +1,4 @@
-@import url('comun.css');
+@import "comun.css";
 
 #portada {
     position: relative;
@@ -28,7 +28,7 @@ video {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
-    text-shadow: 4px 3px 1px #000000;
+    text-shadow: 4px 3px 1px var(--marron);
     z-index: 5;
 }
 
@@ -81,20 +81,36 @@ p {
     justify-content: space-evenly;
 }
 
-#gallery img {
-    height: 20vh;
-}
+#gallery img {height: 20vh;}
 
-#gallery h2 {
-    text-align: center;
-}
+#gallery h2 {text-align: center;}
 
 figure {
     display: inline-block;
+    position: relative;
     border: #9b4320 solid 3px;
     overflow: hidden;
     border-radius: 30px;
     text-align: center;
+}
+
+figure p {
+    position: absolute;
+    width: 100%;
+    top: -20%;
+    opacity: 1;
+}
+
+figure:hover {
+    filter: blur(1px) brightness(50%);
+    transition: ease 0.4s;
+}
+
+figure:hover p {
+    filter: none;
+    color: white;
+    top: 30%;
+    transition: ease 0.5s;
 }
 
 @keyframes fadeInRight {
@@ -118,7 +134,7 @@ figure {
         top: 57%;
     }
 
-    img {
+    #entrance img {
         height: 20vh;
     }
 
