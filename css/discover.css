@@ -79,15 +79,21 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: 10%;
 }
 
-#gallery img {width: 14vw; height: 22vh;}
+#gallery img {
+    display: inline-block;
+    width: 100%; 
+    height: 70%;
+}
 
 #gallery h2 {text-align: center;}
 
 figure {
     display: inline-block;
     position: relative;
+    width: 15%;
     border: #9b4320 solid 3px;
     overflow: hidden;
     border-radius: 30px;
@@ -97,7 +103,8 @@ figure {
 figure p {
     position: absolute;
     width: 100%;
-    top: -40%;
+    top: -100%;
+    left: 0%;
     opacity: 1;
     text-shadow: 2px 2px var(--marron);
 }
@@ -110,7 +117,8 @@ figure:hover img, figure:hover figcaption {
 figure:hover p {
     filter: none;
     color: white;
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
     transition: ease 0.5s;
 }
 
@@ -127,30 +135,35 @@ figure:hover p {
 }
 
 @media screen and (max-width: 1000px) {
-    #portada h1, h2 {
-        font-size: 2.2rem;
-    }
+    #portada h1, h2 {font-size: 2.2rem;}
 
-    #portada h2 {
-        top: 57%;
-    }
+    #portada h2 {top: 57%;}
 
-    #entrance img {
-        height: 20vh;
-    }
+    #entrance img {height: 20vh;}
 
     #line {height: 200px;}
 
+    #gallery div {flex-wrap: wrap;}
+
+    figure{ flex: 30%;}
+
+    figure p {font-size: 1.4rem;}
+
     p {font-size: 1rem;}
+
 }
 
 @media screen and (max-width: 500px) {
-    #portada > h1, h2 {
+    #portada > h1, #portada > h2 {
         position: absolute;
         font-size: 1.2rem;
     }
 
+    h2 {font-size: 1.8rem;}
+
     p {font-size: 0.65rem;}
+
+    figure p {font-size: 1.1rem;}
 
     #line {height: 150px;}
 }
