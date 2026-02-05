@@ -15,6 +15,8 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     width: 80%;
+    z-index: 10;
+    margin-bottom: 3%;
 }
 
 .photo {
@@ -27,6 +29,7 @@ h1, h2 {
     border-radius: 30px;
     text-align: center;
     box-shadow: 0 0.4rem 0.6rem black;
+    background-color: white;
 }
 
 /* .card:hover  {
@@ -37,21 +40,26 @@ h1, h2 {
 
 
 .photo:hover {
-    left: 0;
+    transform: translateX(-50%);
+    transition: 1s ease;
+}
+
+.photo:hover + .info {
+    transform: translateX(50%);
+    transition: 1s ease;
 }
 
 .info {
-    /* z-index: -1; */
     position: absolute;
-    height: 50%;
-    width: 30%;
-    /* top: 1; */
-    /* left: 33%; */
+    top: 1;
+    width: 35%;
+    /* border: #9b4320 solid 3px; */
     background-color: white;
+    z-index: -1;
 }
 
 #activities p {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
     text-align: center;
 }
 
