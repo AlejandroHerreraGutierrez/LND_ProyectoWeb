@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 50%;
+    border: #9b4320 solid 3px;
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#fila1 {
+    display: flex; 
+    flex-direction: row; 
+    width: 50%;
+    gap: 10px; 
+}
+
+#button {
+    width: 100px;
+}

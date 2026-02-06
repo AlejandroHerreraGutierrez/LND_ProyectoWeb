@@ -5,18 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work with Us</title>
     <link href="css/comun.css" rel="stylesheet">
+    <link href="css/workwithus.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Discover the park</a></li>
-                <li><a href="facilitiesAndActivities.html">Facilities and activities</a></li>
-                <li><a href="tickets.html">Tickets</a></li>
-                <li><a href="workWithUs.html">Work with us</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Discover the park</a></li>
+            <li><a href="facilitiesAndActivities.html">Facilities and activities</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="workWithUs.html">Work with us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form>
+
+            <div id="fila1">
+                <div >
+                    <label for="name">Name and surname:</label>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                </div>
+
+                <div>
+                    <label for="description">Job apliccation description:</label><br>
+                    <textarea id="description" name="description" rows="6" cols="50">
+                    Write your description here...
+                    </textarea>
+
+                    <p>Select your desired position:</p>
+                    <input type="radio" id="caretaker" name="caretaker" value="caretaker">
+                    <label for="caretaker">Capy caretaker</label><br>
+                    <input type="radio" id="dev" name="dev" value="dev">
+                    <label for="dev">Capy software engineer</label><br>
+                    <input type="radio" id="showrunner" name="showrunner" value="showrunner">
+                    <label for="showrunner">Capy showrunner</label>
+
+                    <label for="like">How much do you like capybaras?:</label>
+                    <input type="range" id="like" name="like" min="0" max="100">
+                </div>
+            </div>
+           
+            <input id="button" type="submit" value="Submit">
+
+
+        </form>
+    </main>
 
     <footer>
 
@@ -25,7 +65,7 @@
         </div>
 
         <div>
-            <small>Todos los derechos reservados. &copy;2026</small>
+            <small>All rights reserved. &copy;2026</small>
         </div>
 
         <div>
@@ -33,6 +73,5 @@
             alt="capybara"/>
         </div>
     </footer>
-    <h1>Work with Us</h1>
 </body>
 </html>

@@ -21,6 +21,7 @@ video {
 #portada > h1, #portada > h2 {
     display: inline-block;
     text-align: center;
+    font-family: 'Gorditas';
     color: white;
     position: absolute;
     width: 90%;
@@ -80,6 +81,7 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
     height: 10%;
+    font-family: 'Gorditas';
 }
 
 #gallery img {

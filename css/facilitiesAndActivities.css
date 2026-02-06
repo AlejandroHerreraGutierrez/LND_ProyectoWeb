@@ -8,6 +8,7 @@ h1, h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Gorditas';
 }
 
 .card {
@@ -68,4 +69,28 @@ h1, h2 {
     /* object-fit: cover; */
     width: 100%; 
     height: 70%;
+}
+
+@media screen and (max-width: 1500px) {
+    #activities p {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+    #activities p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+    #activities p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 }
