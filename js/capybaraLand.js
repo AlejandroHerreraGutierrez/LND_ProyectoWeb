@@ -63,7 +63,7 @@
 	} else {
 
 	d.write(
-		'\x3cdiv class=\'fw-block\' style=" display:inline-block;position:relative;width:50%;">'
+		'\x3cdiv class=\'fw-block\' style=" display:inline-block;position:relative;width:50%; font-family:"Gorditas;"">'
 		+ '\x3ciframe id="' + _uid + '" name="' + _uid + '" title="fw-iframe" style="position:relative;min-width:150px;min-height:150px;width:100%" class="fw-iframe" scrolling="no" frameborder="0" data-fw-params="' + fwparam + '"' + preloader_text + loading_spinner +'>\x3c/iframe>'
 		+ '\x3cdiv id=\'preview-back\' style="position:absolute;top:0px;left:0px;"> \x3cimg tabindex=\'0\' role=\'button\' id=\'preview-back-image\' alt=\'back button icon\' class=\'fw-preview-button\' onKeyDown="javascript: if(event.keyCode == 8) onClickBack(this, \'' + _uid + '\', \'' + fwparam + '\')" onclick="onClickBack(this, \'' + _uid + '\', \'' + fwparam + '\')"/> \x3c/div>'
 		+ '\x3cstyle> .fw-preview-button{cursor: pointer;height: 64px;opacity: 0;display: none;transition: display 1s linear, opacity 1s linear;} .fw-preview-button.active{opacity: 0.2;display: block;transition-delay: 1s;}.fw-preview-button:hover {opacity: 0.4;} \x3c/style>'

@@ -31,12 +31,15 @@ form {
     border-radius: 30px;
     box-shadow: 0 0.4rem 0.6rem black;
     margin-left: 2%;
+    font-family: 'Gorditas';
 }
 
 label {
     display: block;
     margin-bottom: 4px;
 }
+
+p, label:not(#select label) {color: var(--marron);}
 
 #select label {display: inline;}
 
@@ -70,6 +73,14 @@ input, textarea, select {
 
 #button {
     width: 100px;
+    background: none;
+}
+
+#button:hover {
+    color: white;
+    background-color: var(--marron);
+    transform: scale(1.1);
+    transition: 0.2s ease;
 }
 
 footer {

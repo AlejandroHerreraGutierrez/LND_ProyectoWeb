@@ -1,0 +1,36 @@
+@import "comun.css";
+
+#packs {
+    display: flex;
+    flex-direction: column;
+    columns: 2;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+
+h2, h3 {
+    font-family: 'Gorditas';
+    color: var(--marron);
+}
+
+#cards div {
+    width: 20%;
+    text-align: center;
+    border: #9b4320 solid 3px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+video {
+   width: 100%;
+   height: 100px;
+    object-fit: cover;
+}

@@ -16,7 +16,7 @@ video {
     z-index: -1;
 }
 
-
+h1, h2 {color: var(--marron);}
 
 #portada > h1, #portada > h2 {
     display: inline-block;

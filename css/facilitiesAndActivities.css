@@ -1,6 +1,7 @@
 h1, h2 {
     text-align: center;
-    text-shadow: 1px 1px 1px var(--marron);
+    color: var(--marron);
+    font-family: 'Gorditas';
 }
 
 #activities, #facilities {
