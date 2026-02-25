@@ -130,6 +130,7 @@ figure:hover p {
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
+    font-family: 'Gorditas';
 }
 
 @keyframes fadeInRight {
