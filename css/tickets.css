@@ -3,7 +3,7 @@
 #packs {
     display: flex;
     flex-direction: column;
-    columns: 2;
+    /* columns: 4; */
     text-align: center;
 }
 
@@ -12,7 +12,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
+    font-family: 'Gorditas';
+    margin-top: 30px;
     
 }
 
@@ -27,10 +29,62 @@ h2, h3 {
     border: #9b4320 solid 3px;
     border-radius: 50px;
     overflow: hidden;
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+#cards div:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 video {
    width: 100%;
-   height: 100px;
-    object-fit: cover;
+   height: 300px;
+   object-fit: cover;
+   border-bottom: var(--marron) 3px solid;
+}
+
+#separated {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+}
+
+th, em {font-family: 'Gorditas';}
+
+
+table {
+    /* display: flex; */
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    border: var(--marron) 3px solid;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #cards div {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+
+    #cards {flex-wrap: wrap;}
+
+}
+
+@media screen and (max-width: 500px) {
+
+    #cards div {width: 60%;}
+
 }

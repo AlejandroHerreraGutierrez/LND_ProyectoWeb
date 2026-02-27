@@ -33,8 +33,9 @@ h1, h2 {color: var(--marron);}
     z-index: 5;
 }
 
-#portada > h2 {   
-    top: 55%
+#portada > h2 {
+    font-size: 2rem;   
+    top: 58%
 }
 
 #entrance img {
@@ -51,11 +52,6 @@ h1, h2 {color: var(--marron);}
     flex-direction: column;
     margin-top: 30px;
     
-}
-
-.aparecer {
-    opacity: 1;
-    animation: fadeInRight 1s ease-out forwards;
 }
 
 #entrance div {
@@ -76,11 +72,12 @@ p {
     margin-inline: 15px;
 }
 
+#gallery {font-family: 'Gorditas';}
+
 #gallery div{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-family: 'Gorditas';
 }
 
 #gallery img {
@@ -131,24 +128,17 @@ figure:hover p {
     flex-direction: column;
     margin-bottom: 30px;
     font-family: 'Gorditas';
+    text-align: center;
 }
 
-@keyframes fadeInRight {
-
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }   
-}
 
 @media screen and (max-width: 1000px) {
-    #portada h1, h2 {font-size: 2.2rem;}
+    #portada h1 {font-size: 2.2rem;}
 
-    #portada h2 {top: 57%;}
+    #portada h2 {
+        top: 57%;
+        font-size: 1.5rem;
+    }
 
     #entrance img {height: 20vh;}
 
@@ -164,7 +154,7 @@ figure:hover p {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #portada > h1, #portada > h2 {
         position: absolute;
         font-size: 1.2rem;
