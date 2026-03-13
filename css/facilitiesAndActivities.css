@@ -133,7 +133,9 @@ h1, h2 {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+
+    .card {width: 90%;}
 
     #facilities .photo {height: 150px;}
 
@@ -142,6 +144,8 @@ h1, h2 {
     #activities p, #facilities p {
     font-size: 0.8rem;
     text-align: center;
-}
+    }
+
+    #facilities .card {width:50%;}
 
 }
